@@ -1,4 +1,4 @@
-const { LevelDB } = require('leveldb-zlib')
+const { LevelDB } = require('../index.js')
 
 async function basicTest (pathToDb) {
   const db = new LevelDB(pathToDb, { createIfMissing: true })
